@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import './App.css';
 import { css } from '@emotion/react';
+import FrontRow from './FrontRow';
 import Header from './Header';
 import Nav from './Nav';
 
@@ -14,6 +15,7 @@ function App() {
     <div css={globalStyles}>
       <Nav />
       <Header />
+      <FrontRow />
     </div>
   );
 }
