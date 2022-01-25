@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import ChatIcon from './images/ChatIcon';
 import hseLogo from './images/hseLogo.svg';
 
 export default function Nav() {
@@ -7,6 +8,8 @@ export default function Nav() {
     background-color: rgba(38, 33, 56, 0.7);
     position: fixed;
     width: 100%;
+    z-index: 2;
+    backdrop-filter: blur(5px);
   `;
 
   const navStyles = css`
@@ -55,42 +58,65 @@ export default function Nav() {
     margin-right: 10px;
   `;
 
+  const chatStyles = css`
+    position: fixed;
+    z-index: 2;
+    top: 90%;
+    left: 90%;
+    background-color: #962751;
+    border-radius: 40px;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    white-space: nowrap;
+    &:hover {
+      cursor: pointer;
+    }
+  `;
+
   return (
-    <div css={stickyNavStyles}>
-      <nav css={navStyles}>
-        <img src={hseLogo} alt="hypersay events logo" css={logoStyles} />
+    <div>
+      <div css={stickyNavStyles}>
+        <nav css={navStyles}>
+          <img src={hseLogo} alt="hypersay events logo" css={logoStyles} />
 
-        <button css={dropdownStyles}>
-          <svg
-            width="24px"
-            viewBox="0 0 24 24"
-            focusable="false"
-            class="chakra-icon css-7yz3ll"
-            aria-hidden="true"
-          >
-            <path
-              fill="currentColor"
-              d="M21 13H3a1 1 0 010-2h18a1 1 0 010 2zm0 5H3a1 1 0 010-2h18a1 1 0 010 2zm0-10H3a1 1 0 010-2h18a1 1 0 010 2z"
-            />
-          </svg>
-        </button>
+          <button css={dropdownStyles}>
+            <svg
+              width="24px"
+              viewBox="0 0 24 24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                d="M21 13H3a1 1 0 010-2h18a1 1 0 010 2zm0 5H3a1 1 0 010-2h18a1 1 0 010 2zm0-10H3a1 1 0 010-2h18a1 1 0 010 2z"
+              />
+            </svg>
+          </button>
 
-        <button css={buttonStyles}>
-          <svg
-            viewBox="0 0 24 24"
-            focusable="false"
-            class="chakra-icon css-dlb30e"
-            aria-hidden="true"
-            css={iconStyles}
-          >
-            <path
-              fill="currentColor"
-              d="M17 9V7c0-2.8-2.2-5-5-5S7 4.2 7 7v2c-1.7 0-3 1.3-3 3v7c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3v-7c0-1.7-1.3-3-3-3zM9 7c0-1.7 1.3-3 3-3s3 1.3 3 3v2H9V7zm4.1 8.5l-.1.1V17c0 .6-.4 1-1 1s-1-.4-1-1v-1.4c-.6-.6-.7-1.5-.1-2.1.6-.6 1.5-.7 2.1-.1.6.5.7 1.5.1 2.1z"
-            />
-          </svg>
-          Sign in
-        </button>
-      </nav>
+          <button css={buttonStyles}>
+            <svg
+              viewBox="0 0 24 24"
+              focusable="false"
+              aria-hidden="true"
+              css={iconStyles}
+            >
+              <path
+                fill="currentColor"
+                d="M17 9V7c0-2.8-2.2-5-5-5S7 4.2 7 7v2c-1.7 0-3 1.3-3 3v7c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3v-7c0-1.7-1.3-3-3-3zM9 7c0-1.7 1.3-3 3-3s3 1.3 3 3v2H9V7zm4.1 8.5l-.1.1V17c0 .6-.4 1-1 1s-1-.4-1-1v-1.4c-.6-.6-.7-1.5-.1-2.1.6-.6 1.5-.7 2.1-.1.6.5.7 1.5.1 2.1z"
+              />
+            </svg>
+            Sign in
+          </button>
+        </nav>
+      </div>
+      <div css={chatStyles}>
+        <ChatIcon />
+        {'  '}Chat
+      </div>
     </div>
   );
 }
