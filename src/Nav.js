@@ -25,6 +25,9 @@ export default function Nav() {
     &:hover {
       cursor: pointer;
     }
+    @media screen and (max-width: 700px) {
+      width: 170px;
+    }
   `;
 
   const dropdownStyles = css`
