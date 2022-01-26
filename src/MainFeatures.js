@@ -171,7 +171,7 @@ export default function MainFeatures() {
         })}
       </div>
 
-      <button css={buttonMoreStyles}>Browse all features</button>
+      <button css={buttonMoreStyles}>Browse all features →</button>
 
       <img
         src={RedCircles}
