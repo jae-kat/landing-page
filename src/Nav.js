@@ -3,83 +3,83 @@ import { css } from '@emotion/react';
 import ChatIcon from './images/ChatIcon';
 import hseLogo from './images/hseLogo.svg';
 
-export default function Nav() {
-  const stickyNavStyles = css`
-    background-color: rgba(38, 33, 56, 0.7);
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    backdrop-filter: blur(5px);
-  `;
+const stickyNavStyles = css`
+  background-color: rgba(38, 33, 56, 0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+`;
 
-  const navStyles = css`
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    list-style: none;
-    padding: 8px 16px;
-  `;
+const navStyles = css`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  padding: 8px 16px;
+`;
 
-  const logoStyles = css`
-    width: 262px;
-    &:hover {
-      cursor: pointer;
-    }
-    @media screen and (max-width: 700px) {
-      width: 170px;
-    }
-  `;
-
-  const dropdownStyles = css`
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    background: none;
-    border: none;
-    color: white;
-    border-radius: 7px;
-    &:hover {
-      background-color: rgba(226, 232, 240, 0.1);
-      cursor: pointer;
-    }
-  `;
-
-  const signInStyles = css`
-    background-color: #d6d6d6;
-    border-radius: 7px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 0 1rem;
-    text-align: center;
-    height: 40px;
+const logoStyles = css`
+  width: 262px;
+  &:hover {
     cursor: pointer;
-  `;
+  }
+  @media screen and (max-width: 700px) {
+    width: 170px;
+  }
+`;
 
-  const iconStyles = css`
-    width: 16px;
-    margin-right: 10px;
-  `;
+const dropdownStyles = css`
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: white;
+  border-radius: 7px;
+  &:hover {
+    background-color: rgba(226, 232, 240, 0.1);
+    cursor: pointer;
+  }
+`;
 
-  const chatStyles = css`
-    position: fixed;
-    z-index: 2;
-    top: 90%;
-    left: 90%;
-    background-color: #962751;
-    border-radius: 40px;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    display: inline-block;
-    white-space: nowrap;
-    &:hover {
-      cursor: pointer;
-    }
-  `;
+const signInStyles = css`
+  background-color: #d6d6d6;
+  border-radius: 7px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 1rem;
+  text-align: center;
+  height: 40px;
+  cursor: pointer;
+`;
 
+const iconStyles = css`
+  width: 16px;
+  margin-right: 10px;
+`;
+
+const chatStyles = css`
+  position: fixed;
+  z-index: 2;
+  top: 90%;
+  left: 90%;
+  background-color: #962751;
+  border-radius: 40px;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  white-space: nowrap;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export default function Nav() {
   return (
     <div>
       <div css={stickyNavStyles}>

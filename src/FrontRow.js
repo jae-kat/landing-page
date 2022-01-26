@@ -4,72 +4,72 @@ import firstVideo from './images/firstVideo.mp4';
 import frontRow from './images/frontRow.webp';
 import yellowWaves from './images/yellowWaves.svg';
 
-export default function FrontRow() {
-  const waveStyles = css`
-    background-color: #262138;
-    width: 100%;
-  `;
-  const rotatedWave = css`
-    transform: rotate(180deg);
-  `;
-  const yellowDivStyles = css`
-    background-color: #f4c643;
-    color: #262138;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    font-weight: lighter;
-    outline: 10px solid #f4c643;
-  `;
-  const headerStyles = css`
-    text-align: center;
-    font-weight: lighter;
-    font-size: 30px;
-  `;
-  const boldStyles = css`
-    font-size: 72px;
-    font-weight: bold;
-  `;
-  const frontRowStyles = css`
-    width: 600px;
-    @media screen and (max-width: 700px) {
-      width: 95%;
-    }
-  `;
-  const paraStyles = css`
-    font-size: 20px;
-  `;
-  const iconStyles = css`
-    width: 64px;
-  `;
-  const iconsWrapper = css`
-    display: flex;
-  `;
-  const iconCardStyles = css`
-    width: 133px;
-    font-size: 18px;
-  `;
-  const videoStyles = css`
-    width: 600px;
-    border-radius: 7px;
-    @media screen and (max-width: 700px) {
-      width: 95%;
-    }
-  `;
-  const buttonStyles = css`
-    cursor: pointer;
-    margin: 60px 0 20px 0;
-    background-color: #f5ca52;
-    box-shadow: 0 10px 10px #ddb33c;
-    border: none;
-    border-radius: 7px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #2d2739;
-  `;
+const waveStyles = css`
+  background-color: #262138;
+  width: 100%;
+`;
+const rotatedWave = css`
+  transform: rotate(180deg);
+`;
+const yellowDivStyles = css`
+  background-color: #f4c643;
+  color: #262138;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  font-weight: lighter;
+  outline: 10px solid #f4c643;
+`;
+const headerStyles = css`
+  text-align: center;
+  font-weight: lighter;
+  font-size: 30px;
+`;
+const boldStyles = css`
+  font-size: 72px;
+  font-weight: bold;
+`;
+const frontRowStyles = css`
+  width: 600px;
+  @media screen and (max-width: 700px) {
+    width: 95%;
+  }
+`;
+const paraStyles = css`
+  font-size: 20px;
+`;
+const iconStyles = css`
+  width: 64px;
+`;
+const iconsWrapper = css`
+  display: flex;
+`;
+const iconCardStyles = css`
+  width: 133px;
+  font-size: 18px;
+`;
+const videoStyles = css`
+  width: 600px;
+  border-radius: 7px;
+  @media screen and (max-width: 700px) {
+    width: 95%;
+  }
+`;
+const buttonStyles = css`
+  cursor: pointer;
+  margin: 60px 0 20px 0;
+  background-color: #f5ca52;
+  box-shadow: 0 10px 10px #ddb33c;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d2739;
+`;
 
+export default function FrontRow() {
   return (
     <div>
       <img
