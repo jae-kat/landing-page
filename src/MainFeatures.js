@@ -21,7 +21,15 @@ const gridStyles = css`
   display: grid;
   grid-gap: 15px;
   margin: 15px;
+  @media screen and (min-width: 750px) {
   grid-template-columns: repeat(3, minmax(200px, 380px));
+  }
+  @media screen and (max-width: 750px) and (min-width: 500px) {
+  grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 500px) {
+    grid grid-template-columns: 1fr;
+  }
 `;
 const gridCardStyles = css`
   display: flex;
