@@ -144,7 +144,6 @@ export default function FrontRow() {
         </video>
         <button css={buttonStyles}>Read more</button>
       </div>
-
       <img
         src={yellowWaves}
         alt="background of yellow waves"
