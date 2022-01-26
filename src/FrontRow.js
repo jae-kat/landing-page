@@ -34,7 +34,7 @@ export default function FrontRow() {
   const frontRowStyles = css`
     width: 600px;
     @media screen and (max-width: 700px) {
-      width: 80%;
+      width: 95%;
     }
   `;
   const paraStyles = css`
@@ -53,6 +53,9 @@ export default function FrontRow() {
   const videoStyles = css`
     width: 600px;
     border-radius: 7px;
+    @media screen and (max-width: 700px) {
+      width: 95%;
+    }
   `;
   const buttonStyles = css`
     cursor: pointer;
