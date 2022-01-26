@@ -33,6 +33,9 @@ export default function FrontRow() {
   `;
   const frontRowStyles = css`
     width: 600px;
+    @media screen and (max-width: 700px) {
+      width: 80%;
+    }
   `;
   const paraStyles = css`
     font-size: 20px;
