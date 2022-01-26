@@ -41,7 +41,7 @@ export default function Nav() {
     }
   `;
 
-  const buttonStyles = css`
+  const signInStyles = css`
     background-color: #d6d6d6;
     border-radius: 7px;
     border: none;
@@ -97,7 +97,7 @@ export default function Nav() {
             </svg>
           </button>
 
-          <button css={buttonStyles}>
+          <button css={signInStyles}>
             <svg
               viewBox="0 0 24 24"
               focusable="false"
