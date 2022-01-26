@@ -63,12 +63,12 @@ const iconStyles = css`
 const chatStyles = css`
   position: fixed;
   z-index: 2;
-  top: 90%;
-  left: 90%;
+  top: 90vh;
+  left: 87vw;
   background-color: #962751;
   border-radius: 40px;
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1.5rem 0 1.5rem;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -76,6 +76,10 @@ const chatStyles = css`
   white-space: nowrap;
   &:hover {
     cursor: pointer;
+  }
+  p {
+    display: inline-block;
+    transform: translateY(-3px);
   }
 `;
 
@@ -117,8 +121,8 @@ export default function Nav() {
         </nav>
       </div>
       <div css={chatStyles}>
-        <ChatIcon />
-        {'  '}Chat
+        <ChatIcon /> {'  '}
+        <p>Chat</p>
       </div>
     </div>
   );

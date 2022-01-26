@@ -73,10 +73,10 @@ const imgBoxStyles = css`
   @media screen and (max-width: 1000px) {
     width: 50%;
   }
-  @media screen and (min-width: 1000px) and (max-width: 760px) {
+  @media screen and (min-width: 1000px) and (max-width: 700px) {
     width: 50%;
   }
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 700px) {
     width: 95%;
     padding: 10px;
     order: -1;

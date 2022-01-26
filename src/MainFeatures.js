@@ -44,6 +44,7 @@ const gridCardStyles = css`
   line-height: 1.5;
 `;
 const buttonStyles = css`
+  cursor: pointer;
   background-color: transparent;
   border: none;
   box-shadow: 0px 5px 6px #2a2639;

@@ -49,6 +49,9 @@ const iconCardStyles = css`
   width: 133px;
   font-size: 18px;
 `;
+const videoTextStyles = css`
+  font-weight: 500;
+`;
 const videoStyles = css`
   width: 600px;
   border-radius: 7px;
@@ -138,7 +141,7 @@ export default function FrontRow() {
             <p>Say Hello & meet people</p>
           </div>
         </div>
-        <p>Why we built the FrontRow (44s)</p>
+        <p css={videoTextStyles}>Why we built the FrontRow (44s)</p>
         <video css={videoStyles} src={firstVideo} muted controls>
           Video Error
         </video>
